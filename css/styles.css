@@ -1,0 +1,56 @@
+*,
+* ::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+#name-output {
+  display: inline-block;
+  padding-bottom: 30px;
+}
+
+.container {
+  width: 1200px;
+  padding: 94px 0;
+  margin: 0 auto;
+}
+
+.list {
+  list-style: none;
+}
+
+.gallery-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gallery-list li {
+  width: 350px;
+  padding-top: 30px;
+}
+
+.gallery-list > li > img {
+  width: 100%;
+}
+
+.task {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#validation-input {
+  border: 3px solid #bdbdbd;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
+}
