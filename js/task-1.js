@@ -17,13 +17,13 @@ for(let elem of categoryArray) {
     console.log(`Количество элемментов: ${elem.lastElementChild.children.length}`)
 };
 
-console.log(elemRef.children, `Количество категорий : ${elemRef.children.length}`);
-
-const childrenElem = elemRef.children
+/* console.log(elemRef.children, `Количество категорий : ${elemRef.children.length}`);
+ */
+/* const childrenElem = elemRef.children
 for(let element of childrenElem) {
     console.log('Категория:', element.querySelector("h2").textContent);
     console.log('Количество элементов:', element.querySelector("ul").children.length)
-};
+}; */
 
 
 
