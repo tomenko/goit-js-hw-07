@@ -29,6 +29,11 @@ const images = [
   },
 ];
 
+//1-й способ решения
+const liArr = images.reduce( ( liStr, elem ) => liStr + `<li><img src="${elem.url}" alt="${elem.alt}"></li>`, `` );
+elemRef.insertAdjacentHTML( `beforeend`, liArr );
+
+//2-й способ решения
 /* const liArr = images.map(elem => {
   const li = document.createElement(`li`);
   const image = document.createElement(`img`);
@@ -40,7 +45,3 @@ const images = [
 });
 
 elemRef.append(...liArr); */
-
-
-const liArr = images.reduce( ( liStr, elem ) => liStr + `<li><img src="${elem.url}" alt="${elem.alt}"></li>`, `` );
-elemRef.insertAdjacentHTML( `beforeend`, liArr );

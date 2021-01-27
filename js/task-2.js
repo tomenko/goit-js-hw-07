@@ -15,11 +15,7 @@ const ingredients = [
 ];
 
 
-/* ingredients.map(element => elemRef.insertAdjacentHTML("beforeend", `<li> ${element}</li>`));
-менее подходящий вариант т.как при каждом
-переборе, li будет добавляться в DOM поочерёдно*/
-
-
+//1-й способ решения
 const liArr = ingredients.map( elem => {
     const li = document.createElement( `li` );
     li.textContent = elem;
@@ -27,5 +23,9 @@ const liArr = ingredients.map( elem => {
 } );
 elemRef.append( ...liArr );
 
+//2-й способ решения
+/* ingredients.map(element => elemRef.insertAdjacentHTML("beforeend", `<li> ${element}</li>`));
+менее подходящий вариант т.как при каждом
+переборе, li будет добавляться в DOM поочерёдно*/
 
 

@@ -10,12 +10,13 @@ span#text обновляя свойство font - size.В результате 
 
 const inputRef = document.querySelector('#font-size-control');
 const textRef = document.querySelector('#text');
+console.dir(textRef);
+
 inputRef.addEventListener('input', e => {
     e.preventDefault()
-    textRef.style.fontSize = `${1/10*inputRef.value}em`;
+    textRef.style.fontSize = `${inputRef.value}px`;
 
     console.log(inputRef.value);
     console.log(textRef.style.fontSize);
-
 }) 
  
