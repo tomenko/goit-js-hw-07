@@ -10,7 +10,7 @@
 
 const elemRef = document.querySelector('#categories');
 
-console.log('В списке', elemRef.children.length, 'категории.');
+console.log(`В списке ${elemRef.children.length} категории.`);
 
 //1-й способ решения
 const categoryArray = document.querySelectorAll(`.item`);
